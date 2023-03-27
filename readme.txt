@@ -2,3 +2,4 @@ Connect is a mental health platform founded by 5 high school students to provide
 
 Access our website here: https://neilshah2026.github.io/connect/#about
 
+
