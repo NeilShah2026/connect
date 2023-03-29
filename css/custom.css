@@ -1,3 +1,4 @@
+
 a, a:hover, a:focus, a:active {
     text-decoration: none;
     outline: none;
@@ -10,7 +11,7 @@ ul {
 }
 .faq {
     padding: 120px 0 90px;
-    background: #f7fbff;
+    background: #ffffff;
     min-height: 100vh;
 }
 
