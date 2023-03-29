@@ -1,3 +1,8 @@
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    outline: none;
+}
+
 ul {
     margin: 0;
     padding: 0;
