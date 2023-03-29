@@ -58,7 +58,7 @@ drift.load('td28kivkmuuv');
       <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="navbar">
         <div class="container"><a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" width="80"></a>
           <button class="navbar-toggler navbar-toggler-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent" toggle="collapse" data-target=".navbar-collapse">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item"><a class="nav-link link-scroll active" href="#hero">Home <span class="sr-only">(current)</span></a></li>
               <li class="nav-item"><a class="nav-link link-scroll" href="#features">Features</a></li>
@@ -449,18 +449,14 @@ drift.load('td28kivkmuuv');
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- Start of HubSpot Embed Code -->
     <!-- End of HubSpot Embed Code -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script>
-        //Hamburger menu toggle
-  $(".navbar-nav li a").click(function (event) {
-    // check if window is small enough so dropdown is created
-    var toggle = $(".navbar-toggle").is(":visible");
-    if (toggle) {
-      $(".navbar-collapse").collapse('hide');
-    }
-  });
+      $(document).ready(function() {
+        $('.navbar-toggler').click(function() {
+          $('.navbar-collapse').collapse('hide');
+        });
+      });
     </script>
 </body>
 </html>
